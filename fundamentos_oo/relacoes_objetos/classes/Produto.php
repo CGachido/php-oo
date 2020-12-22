@@ -25,6 +25,11 @@ class Produto
     return $this->descricao;
   }
 
+  public function getPreco()
+  {
+    return $this->preco;
+  }
+
   public function setFabricate(Fabricante $fabricante)
   {
     $this->fabricante = $fabricante;
