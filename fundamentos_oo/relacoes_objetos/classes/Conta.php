@@ -35,4 +35,9 @@ abstract class Conta
   {
     return "Agência {$this->agencia}, Conta {$this->conta}";
   }
+
+  // Um metodo abstrato é um metodo que gostariamos de forçar a implementação nas classes filhas;
+  // Somente uma assinatura
+  // Qualquer classe filha que extender essa conta, deve implementar esse método
+  abstract function retirar($quantia);
 }
