@@ -2,7 +2,7 @@
 
 class Pessoa
 {
-  private $nome;
+  protected $nome;
 
   public function __construct($nome)
   {
