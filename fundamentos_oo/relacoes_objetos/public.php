@@ -5,7 +5,7 @@
 // Proteger a informação que ela carrega
 // Proteger de ser enviado um dado inconsistente
 // Seus atributos não devem ser acessados pelo "mundo externo", deve ser feito por meio de métodos
-
+// Public, qualquer um pode mexer, desprotegido
 class Pessoa
 {
   public $nome;
