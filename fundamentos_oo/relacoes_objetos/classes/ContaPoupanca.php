@@ -1,5 +1,8 @@
 <?php
-class ContaPoupanca extends Conta
+
+// Classe final é uma classe que não deve ser extendida, impedir uma classe filha dela
+// Impedir uma classe derivada dela
+final class ContaPoupanca extends Conta
 {
   public function retirar($quantia)
   {

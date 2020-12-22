@@ -1,6 +1,10 @@
 <?php
 
-class Conta
+// Uma classe abstrata é uma classe incompleta, serva para estruturar outras classes
+// Seu propósito é construir outras classes derivadas a partir dela
+// Proposito de ser base
+
+abstract class Conta
 {
   protected $agencia;
   protected $conta;
