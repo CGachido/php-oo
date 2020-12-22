@@ -6,7 +6,7 @@ class Pessoa
   // Constante ou Atributo de classe
   private $nome;
   private $genero;
-  const GENEROS = [
+  private const GENEROS = [
     'M' => 'Masculino',
     'F' => 'Feminino',
   ];
@@ -28,7 +28,7 @@ class Pessoa
   }
 }
 
-var_dump(Pessoa::GENEROS['M']);
+var_dump(Pessoa::GENEROS);
 $p1 = new Pessoa('Maria da Silva', 'F');
 $p2 = new Pessoa('José da Silva', 'M');
 
