@@ -28,7 +28,7 @@ class Pessoa
   }
 }
 
-var_dump(Pessoa::GENEROS);
+// var_dump(Pessoa::GENEROS);
 $p1 = new Pessoa('Maria da Silva', 'F');
 $p2 = new Pessoa('José da Silva', 'M');
 
