@@ -10,7 +10,9 @@ class ContaCorrente extends Conta
   }
 
 
-  public function retirar($quantia)
+  // Metodo final é quando não queremos que seja modificado na classe filha
+  // Não pode mais ser redefinido em classes filhas
+  public final function retirar($quantia)
   {
     if ($this->saldo + $this->limite >= $quantia) {
       $this->saldo -= $quantia;
