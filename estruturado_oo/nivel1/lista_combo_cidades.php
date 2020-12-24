@@ -1,6 +1,6 @@
 <?php
 
-function lista_combo_cidades()
+function lista_combo_cidades($idCidade = null)
 {
   $conn = pg_connect('host=localhost port=5432 dbname=curso_oo user=postgres password=pg@password');
   $result = pg_query($conn, "SELECT id, nome FROM cidades ORDER BY nome");
@@ -10,7 +10,8 @@ function lista_combo_cidades()
     while ($row = pg_fetch_assoc($result)) {
       $id = $row['id'];
       $nome = $row['nome'];
-      $output .= "<option value='{$id}'>{$nome}</option>";
+      $check = ($id == $idCidade) ? "selected" : "";
+      $output .= "<option {$check} value='{$id}'>{$nome}</option>";
     }
   }
 
