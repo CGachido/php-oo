@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Pessoa</title>
+  <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+<form enctype="multipart/form-data" action="index.php?class=PessoaForm&method=save" method="post">
+    <label for="">Código</label>
+    <input value="{id}" readonly="1" type="text" name="id" style="width: 30%;">
+    <label for="">Nome</label>
+    <input value="{nome}" type="text" name="nome" style="width: 50%;">
+    <label for="">Endereço</label>
+    <input value="{endereco}" type="text" name="endereco" style="width: 50%;">
+    <label for="">Bairro</label>
+    <input value="{bairro}" type="text" name="bairro" style="width: 25%;">
+    <label for="">Telefone</label>
+    <input value="{telefone}" type="text" name="telefone" style="width: 50%;">
+    <label for="">Email</label>
+    <input value="{email}" type="text" name="email" style="width: 25%;">
+    <label for="">Cidade</label>
+    <select type="text" name="id_cidade" style="width: 25%;">
+      {cidades}
+    </select>
+    <input type="submit" value="ENVIAR">
+  </form>
+
+</body>
+
+</html>
