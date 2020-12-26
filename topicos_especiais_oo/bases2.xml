@@ -1,0 +1,8 @@
+<bases>
+  <base id="1">
+    <nome>teste</nome>
+    <host>192.168.0.1</host>
+    <type>mysql</type>
+    <user>mary</user>
+  </base>
+</bases>
