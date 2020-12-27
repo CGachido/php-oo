@@ -1,0 +1,13 @@
+2020-12-27 01:36:21: INSERT INTO produtos (
+        id, descricao, estoque, preco_custo, preco_venda, codigo_barras,
+        data_cadastro, origem
+        ) VALUES (
+          '4',
+          'Chocolate Branco',
+          '22',
+          '8',
+          '18',
+          '4432423',
+          '2020-12-27',
+          'N'
+        )
