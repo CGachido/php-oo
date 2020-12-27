@@ -1,0 +1,5 @@
+2020-12-27 13:37:52: SELECT * FROM produtos  WHERE (preco_venda <= 35 and origem = 'N') <br>
+2020-12-27 13:37:52: SELECT * FROM produtos WHERE id = 3 <br>
+2020-12-27 13:37:52: UPDATE produtos SET id = 3, descricao = 'SD CARD  512MB', estoque = '4', preco_custo = '20', preco_venda = 45.5, codigo_barras = '0000000003', data_cadastro = '2015-01-01', origem = 'N' WHERE id = 3 <br>
+2020-12-27 13:37:52: SELECT * FROM produtos WHERE id = 23 <br>
+2020-12-27 13:37:52: UPDATE produtos SET id = 23, descricao = 'MOUSE PS2 A7 AZUL/PLATA', estoque = '20', preco_custo = '5', preco_venda = 19.5, codigo_barras = '0000000022', data_cadastro = '2015-01-01', origem = 'N' WHERE id = 23 <br>

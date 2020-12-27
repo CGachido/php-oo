@@ -1,0 +1,3 @@
+
+2020-12-27 13:34:59: SELECT * FROM produtos  WHERE (estoque > 10 and origem = 'N')
+2020-12-27 13:34:59: SELECT COUNT(*) FROM produtos  WHERE (estoque > 10 and origem = 'N')
