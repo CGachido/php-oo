@@ -1,0 +1,31 @@
+<div class="card" style="margin: 40px;">
+	<div class="card-header">{{title}}</div>
+	<div class="card-body">
+		<form method="POST" action="{{action}}" class="form-horizontal">
+			<div class="row mb-3">
+				<label class="col-sm-2 col-form-label">Nome</label>
+				<div class="col-sm-10">
+					<input type="text" name="name" value="{{nome}}" class="form-control">
+				</div>
+			</div>
+			<div class="row mb-3">
+				<label class="col-sm-2 col-form-label">Endereço</label>
+				<div class="col-sm-10">
+					<input type="text" name="endereco" value="{{endereco}}" class="form-control">
+				</div>
+			</div>
+			<div class="row mb-3">
+				<label class="col-sm-2 col-form-label">Telefone</label>
+				<div class="col-sm-10">
+					<input type="text" name="telefone" value="{{telefone}}" class="form-control">
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<div class="col-sm-10 offset-sm-2">
+					<input type="submit" class="btn btn-success" value="Enviar">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

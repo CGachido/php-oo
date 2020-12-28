@@ -10,6 +10,8 @@ $al->addDirectory('App/Control');
 $al->addDirectory('App/Model');
 $al->register();
 
+require_once 'vendor/autoload.php';
+
 if ($_GET) {
 	$class = $_GET['class'];
 
