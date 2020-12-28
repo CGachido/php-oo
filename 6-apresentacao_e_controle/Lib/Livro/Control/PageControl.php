@@ -2,11 +2,17 @@
 
 namespace Livro\Control;
 
-class PageControl
+use Livro\Widgets\Base\Element;
+
+class PageControl extends Element
 {
+	public function __construct()
+	{
+		parent::__construct('div');
+	}
+
 	public function show()
 	{
-
 		if ($_GET) {
 			$method = isset($_GET['method']) ? $_GET['method'] : null;
 
@@ -14,5 +20,7 @@ class PageControl
 				call_user_func([$this, $method], $_REQUEST);
 			}
 		}
+
+		parent::show();
 	}
 }
