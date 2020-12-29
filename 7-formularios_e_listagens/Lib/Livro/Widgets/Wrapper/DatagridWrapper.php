@@ -1,6 +1,6 @@
 <?php
 
-namespace Livro\Widgets\Datagrid;
+namespace Livro\Widgets\Wrapper;
 
 use Livro\Widgets\Container\Panel;
 use Livro\Widgets\Datagrid\Datagrid;
@@ -75,6 +75,7 @@ class DatagridWrapper
 				$cell->add($label);
 				$cell->style = "text-align: {$align};";
 				$cell->width = $width;
+				$row->add($cell);
 
 				if ($column->getAction()) {
 					$url = $column->getAction()->serialize();
@@ -131,7 +132,7 @@ class DatagridWrapper
 				$data = $item->$name;
 
 				if ($function) {
-					$data = call_user_func_array($function, $data);
+					$data = call_user_func($function, $data);
 				}
 
 				$element = new Element('td');
